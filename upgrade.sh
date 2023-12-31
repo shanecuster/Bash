@@ -57,4 +57,5 @@ clear
 
 #I have neofetch set to run when the terminal starts so this will appear that a new terminal window has opened once the upgrade has completed.
 neofetch
+
 exit
