@@ -14,7 +14,7 @@ sudo dnf5 upgrade -y
 sleep 3
 
 #Updates Flatpaks
-flatpak upgrade
+flatpak upgrade -y
 
 #Adding a blank line in the text for cleaner output.
 echo -e "\n"
@@ -55,4 +55,6 @@ read
 #Clearing the screen after finishing.
 clear
 
+#I have neofetch set to run when the terminal starts so this will appear that a new terminal window has opened once the upgrade has completed.
+neofetch
 exit
