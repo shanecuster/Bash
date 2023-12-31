@@ -36,6 +36,14 @@ sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 sudo dnf install brave-browser
 
 #Installing Bitwarden password manager.
-sudo dnf install bitwarden
+sudo dnf install bitwarden -y
+
+#Installing Neofetch and setting it to run at terminal startup.
+sudo dnf install neofetch -y
+
+echo "neofetch" >> /home/.bashrc
+
+#Installing Htop and Stacer
+sudo dnf install htop stacer -y
 
 exit
