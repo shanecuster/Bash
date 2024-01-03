@@ -8,7 +8,8 @@
 clear
 
 #Updates the system using dnf5
-sudo dnf5 upgrade -y
+#Add user to /etc/sudoers file
+dnf5 upgrade -y
 
 #Waiting three seconds
 sleep 3
@@ -47,7 +48,7 @@ echo "Your software is up-to-date."
 echo -e "\n"
 
 #exiting the script
-echo "Press any key to exit"
+echo "Press Enter to exit"
 
 #Reading user input
 read
