@@ -7,9 +7,9 @@
 sudo hostnamectl set-hostname "Fedora"
 
 #Editing the DNF configuration file.
-sudo echo "max_parallel_downloads=10" >> /etc/dnf/dnf.conf
-sudo echo "fastestmirror=true" >> /etc/dnf/dnf.conf
-sudo echo "defaultyes=true" >> /etc/dnf/dnf.conf
+sudo sh -c 'echo "max_parallel_downloads=10" >> /etc/dnf/dnf.conf'
+sudo sh -c 'echo "fastestmirror=true" >> /etc/dnf/dnf.conf'
+sudo sd -c 'echo "defaultyes=true" >> /etc/dnf/dnf.conf'
 
 #Adding a blank line in text for cleaner output.
 echo -e "\n"
@@ -31,7 +31,7 @@ echo -e "\n"
 echo "System upgrade will now begin."
 
 #Updating the System.
-sudo dnf upgrade
+sudo dnf upgrade -y
 
 #Adding a blank line in text for cleaner output.
 echo -e "\n"
@@ -125,6 +125,12 @@ sudo dnf install discord -y
 
 #Clearing the screen after install.
 clear
+
+#Posting Press Enter to Continue to Let the user know the script has completed.
+echo "Press Enter to continue."
+
+#Reading user Input
+read
 
 #Setting Neofetch to run after the screen is cleared to appear as a brand new terminal prompt.
 neofetch
