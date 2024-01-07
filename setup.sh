@@ -15,7 +15,7 @@ sudo sd -c 'echo "defaultyes=true" >> /etc/dnf/dnf.conf'
 echo -e "\n"
 
 #Installing DNF5
-sudo dnf install dnf5
+sudo dnf install dnf5 dnf5-plugins
 
 #Creating Aliases for DNF5
 sudo echo "alias dnf="dnf5"" >> /home/.bashrc
@@ -117,14 +117,60 @@ sudo dnf install neofetch -y
 
 sudo echo "neofetch" >> /home/.bashrc
 
-#Installing Htop and Stacer
-sudo dnf install htop stacer -y
+#Installing Htop
+sudo dnf install htop -y
+
+#Installing Stacer
+sudo dnf install stacer -y
 
 #Installing Discord
 sudo dnf install discord -y
 
-#Clearing the screen after install.
-clear
+#Installing Cider
+sudo dnf install cider -y
+
+#Installing Geary
+sudo dnf install geary -y
+
+#Installing Fragments
+sudo dnf install fragments -y
+
+#Installing Handbrake
+sudo dnf install handbrake -y
+
+#Installing Krita
+sudo dnf install krita -y
+
+#Installing Gimp
+sudo dnf install gimp -y
+
+#This is optional software that I use occassionally.
+#I know These can be put in a single command.
+#I have it setup this way to make it easier to navigate.
+
+#Installing Thunderbird
+sudo dnf install thunderbird -y
+
+#Installing Blanket
+sudo dnf install blanket -y
+
+#Installing Podcasts
+sudo dnf install podcasts -y
+
+#Installing Shortwave
+sudo dnf install shortwave -y
+
+#Installing Librewolf
+sudo dnf install librewolf -y
+
+#Installing Remmina
+sudo dnf install remmina -y
+
+#installing Bottles
+sudo dnf install bottles -y
+
+#Creating Alias for "clear" to clear the screen and show neofetch.
+sudo echo "alias clear="clear && neofetch"" >> /home/.bashrc
 
 #Posting Press Enter to Continue to Let the user know the script has completed.
 echo "Press Enter to continue."
@@ -132,7 +178,7 @@ echo "Press Enter to continue."
 #Reading user Input
 read
 
-#Setting Neofetch to run after the screen is cleared to appear as a brand new terminal prompt.
-neofetch
+#Clearing the screen after install.
+clear
 
 exit
