@@ -7,9 +7,8 @@
 #Clear the screen
 clear
 
-#Updates the system using dnf5
-#Add user to /etc/sudoers file
-dnf5 upgrade -y
+#Updates the system using dnf
+sudo dnf upgrade -y
 
 #Waiting three seconds
 sleep 3
@@ -56,7 +55,7 @@ read
 #Clearing the screen after finishing.
 clear
 
-#I have neofetch set to run when the terminal starts so this will appear that a new terminal window has opened once the upgrade has completed.
+#I have neofetch set to run automatically at terminal startup so this will appear as if I have just opened the terminal after upgrading.
 neofetch
 
 exit
