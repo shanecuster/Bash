@@ -117,57 +117,184 @@ sudo dnf install neofetch -y
 
 sudo echo "neofetch" >> /home/.bashrc
 
+#Installing Some Frequently Used Utilities.
+
 #Installing Htop
 sudo dnf install htop -y
 
 #Installing Stacer
 sudo dnf install stacer -y
 
-#Installing Discord
-sudo dnf install discord -y
+#Installing Some Flatpak's via Flathub.
 
-#Installing Cider
-sudo dnf install cider -y
+#PrusaSlicer for 3D Printer.
 
-#Installing Geary
-sudo dnf install geary -y
+#Installing PrusaSlicer via Flathub
+flatpak install flathub com.prusa3d.PrusaSlicer
 
-#Installing Fragments
-sudo dnf install fragments -y
+#Other Applications for 3D Printing.
+
+#Installing FreeCAD via Flathub
+flatpak install flathub org.freecadweb.FreeCAD
+
+#Installing Blender via Flathub
+flatpak install flathub org.blender.Blender
+
+#Chat Applications
+
+#Installing Discord via Flathub
+flatpak install flathub com.discordapp.Discord
+
+#Installing Telegram via Flathub
+flatpak install flathub org.telegram.desktop
+
+#Installing Whalebird via Flathub
+flatpak install flathub social.whalebird.WhalebirdDesktop
+
+#Installing HexChat via Flathub
+flatpak install flathub io.github.Hexchat
+
+#Music Players
+
+#Installing Cider via Flathub
+flatpak install flathub sh.cider.Cider
+
+#Installing Blanket via Flathub
+flatpak install flathub com.rafaelmardojai.Blanket
+
+#Installing Podcasts via Flathub
+flatpak install flathub org.gnome.Podcasts
+
+#Installing Shortwave via Flathub
+flatpak install flathub de.haeckerfelix.Shortwave
+
+#Sublime for Text editing and Git.
+
+#Installing Sublime Text via Flathub
+flatpak install flathub com.sublimetext.three
+
+#Installing Sublime Merge via Flathub
+flatpak install flathub com.sublimemerge.App
+
+#IDE's for Code editing
+
+#Installing Visual Studio Code via Flathub
+flatpak install flathub com.visualstudio.code
+
+#Installing Pycharm Community via Flathub
+flatpak install flathub com.jetbrains.PyCharm-Community
+
+#Deja Dup for Backups
+
+#Installing Deja Dup via Flathub
+flatpak install flathub org.gnome.DejaDup
+
+#Torrents
+
+#Installing Fragments via Flathub
+flatpak install flathub de.haeckerfelix.Fragments
+
+#DVD/Blu-Ray Conversion
+
+#Installing MakeMKV via Flathub
+flatpak install flathub com.makemkv.MakeMKV
 
 #Installing Handbrake
 sudo dnf install handbrake -y
 
-#Installing Krita
-sudo dnf install krita -y
+#Digital Art
 
-#Installing Gimp
-sudo dnf install gimp -y
+#Installing Krita via Flathub
+flatpak install flathub org.kde.krita
 
-#This is optional software that I use occassionally.
-#I know These can be put in a single command.
-#I have it setup this way to make it easier to navigate.
+#Installing Gimp via Flathub
+flatpak install flathub org.gimp.GIMP
 
-#Installing Thunderbird
-sudo dnf install thunderbird -y
+#Installing Inkscape via Flathub
+flatpak install flathub org.inkscape.Inkscape
 
-#Installing Blanket
-sudo dnf install blanket -y
+#Virtual Machine Software
 
-#Installing Podcasts
-sudo dnf install podcasts -y
+#Installing Virtual Machine Manager
+sudo dnf install virt-manager -y
 
-#Installing Shortwave
-sudo dnf install shortwave -y
+#Installing Boxes via Flathub
+flatpak install flathub org.gnome.Boxes
 
-#Installing Librewolf
-sudo dnf install librewolf -y
+#Email Clients
 
-#Installing Remmina
-sudo dnf install remmina -y
+#Installing Geary via Flathub
+flatpak install flathub org.gnome.Geary
 
-#installing Bottles
-sudo dnf install bottles -y
+#Installing Evolution via Flathub
+flatpak install flathub org.gnome.Evolution
+
+#Installing Thunderbird via Flathub
+flatpak install flathub org.mozilla.Thunderbird
+
+#Web Browsers
+#Firefox is installed by default.
+#Brave should already be installed at this point.
+
+#Installing Librewolf via Flathub
+flatpak install flathub io.gitlab.librewolf-community
+
+#Installing Vivaldi via Flathub
+flatpak install flathub com.vivaldi.Vivaldi
+
+#Game Stuff
+
+#Installing Steam via Flathub
+flatpak install flathub com.valvesoftware.Steam
+
+#Installing Bottles via Flathub
+flatpak install flathub com.usebottles.bottles
+
+#Installing MiniGalaxy via Flathub
+flatpak install flathub io.github.sharkwouter.Minigalaxy
+
+#Installing Heroic Games Launcher via Flathub
+flatpak install flathub com.heroicgameslauncher.hgl
+
+#Installing Lutris via Flathub
+flatpak install flathub net.lutris.Lutris
+
+#Books
+
+#Installing Calibre via Flathub
+flatpak install flathub com.calibre_ebook.calibre
+
+#Photos
+
+#Installing XnConvert via Flathub
+#This is what you use for converting WebP Images for Wallpapers.
+flatpak install flathub com.xnview.XnConvert
+
+#Remote Desktop
+
+#Installing Remmina via Flathub
+flatpak install flathub org.remmina.Remmina
+
+#Other Stuff that needs to be installed.
+
+#Installing Authenticator via Flathub
+flatpak install flathub com.belmoussaoui.Authenticator
+
+#Adding a blank line in text for cleaner output.
+echo -e "\n"
+
+#Alerting the user that their software has been installed.
+echo "Software has been installed."
+
+#Adding a blank line in text for cleaner output.
+echo -e "\n"
+
+Alerting the user of some other Software that needs to be installed.
+echo "You may still want to install: " && \
+echo "DeaDBeef" && \
+echo "TorGuard" && \
+echo "Minecraft" && \
+echo "VirtualBox" && \
 
 #Creating Alias for "clear" to clear the screen and show neofetch.
 sudo echo "alias clear="clear && neofetch"" >> /home/.bashrc
