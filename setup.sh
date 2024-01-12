@@ -97,7 +97,7 @@ echo -e "\n"
 echo "Now installing Bitwarden Password Manager."
 
 #Installing Bitwarden Password manager.
-sudo dnf install bitwarden -y
+flatpak install flathub com.bitwarden.desktop -y
 
 #Adding a blank line in text for cleaner output.
 echo -e "\n"
@@ -130,74 +130,74 @@ sudo dnf install stacer -y
 #PrusaSlicer for 3D Printer.
 
 #Installing PrusaSlicer via Flathub
-flatpak install flathub com.prusa3d.PrusaSlicer
+flatpak install flathub com.prusa3d.PrusaSlicer -y
 
 #Other Applications for 3D Printing.
 
 #Installing FreeCAD via Flathub
-flatpak install flathub org.freecadweb.FreeCAD
+flatpak install flathub org.freecadweb.FreeCAD -y
 
 #Installing Blender via Flathub
-flatpak install flathub org.blender.Blender
+flatpak install flathub org.blender.Blender -y
 
 #Chat Applications
 
 #Installing Discord via Flathub
-flatpak install flathub com.discordapp.Discord
+flatpak install flathub com.discordapp.Discord -y
 
 #Installing Telegram via Flathub
-flatpak install flathub org.telegram.desktop
+flatpak install flathub org.telegram.desktop -y
 
 #Installing Whalebird via Flathub
-flatpak install flathub social.whalebird.WhalebirdDesktop
+flatpak install flathub social.whalebird.WhalebirdDesktop -y
 
 #Installing HexChat via Flathub
-flatpak install flathub io.github.Hexchat
+flatpak install flathub io.github.Hexchat -y
 
 #Music Players
 
 #Installing Cider via Flathub
-flatpak install flathub sh.cider.Cider
+flatpak install flathub sh.cider.Cider -y
 
 #Installing Blanket via Flathub
-flatpak install flathub com.rafaelmardojai.Blanket
+flatpak install flathub com.rafaelmardojai.Blanket -y
 
 #Installing Podcasts via Flathub
-flatpak install flathub org.gnome.Podcasts
+flatpak install flathub org.gnome.Podcasts -y
 
 #Installing Shortwave via Flathub
-flatpak install flathub de.haeckerfelix.Shortwave
+flatpak install flathub de.haeckerfelix.Shortwave -y
 
 #Sublime for Text editing and Git.
 
 #Installing Sublime Text via Flathub
-flatpak install flathub com.sublimetext.three
+flatpak install flathub com.sublimetext.three -y
 
 #Installing Sublime Merge via Flathub
-flatpak install flathub com.sublimemerge.App
+flatpak install flathub com.sublimemerge.App -y
 
 #IDE's for Code editing
 
 #Installing Visual Studio Code via Flathub
-flatpak install flathub com.visualstudio.code
+flatpak install flathub com.visualstudio.code -y
 
 #Installing Pycharm Community via Flathub
-flatpak install flathub com.jetbrains.PyCharm-Community
+flatpak install flathub com.jetbrains.PyCharm-Community -y
 
 #Deja Dup for Backups
 
 #Installing Deja Dup via Flathub
-flatpak install flathub org.gnome.DejaDup
+flatpak install flathub org.gnome.DejaDup -y
 
 #Torrents
 
 #Installing Fragments via Flathub
-flatpak install flathub de.haeckerfelix.Fragments
+flatpak install flathub de.haeckerfelix.Fragments -y
 
 #DVD/Blu-Ray Conversion
 
 #Installing MakeMKV via Flathub
-flatpak install flathub com.makemkv.MakeMKV
+flatpak install flathub com.makemkv.MakeMKV -y
 
 #Installing Handbrake
 sudo dnf install handbrake -y
@@ -205,13 +205,13 @@ sudo dnf install handbrake -y
 #Digital Art
 
 #Installing Krita via Flathub
-flatpak install flathub org.kde.krita
+flatpak install flathub org.kde.krita -y
 
 #Installing Gimp via Flathub
-flatpak install flathub org.gimp.GIMP
+flatpak install flathub org.gimp.GIMP -y
 
 #Installing Inkscape via Flathub
-flatpak install flathub org.inkscape.Inkscape
+flatpak install flathub org.inkscape.Inkscape -y
 
 #Virtual Machine Software
 
@@ -219,66 +219,66 @@ flatpak install flathub org.inkscape.Inkscape
 sudo dnf install virt-manager -y
 
 #Installing Boxes via Flathub
-flatpak install flathub org.gnome.Boxes
+flatpak install flathub org.gnome.Boxes -y
 
 #Email Clients
 
 #Installing Geary via Flathub
-flatpak install flathub org.gnome.Geary
+flatpak install flathub org.gnome.Geary -y
 
 #Installing Evolution via Flathub
-flatpak install flathub org.gnome.Evolution
+flatpak install flathub org.gnome.Evolution -y
 
 #Installing Thunderbird via Flathub
-flatpak install flathub org.mozilla.Thunderbird
+flatpak install flathub org.mozilla.Thunderbird -y
 
 #Web Browsers
 #Firefox is installed by default.
 #Brave should already be installed at this point.
 
 #Installing Librewolf via Flathub
-flatpak install flathub io.gitlab.librewolf-community
+flatpak install flathub io.gitlab.librewolf-community -y
 
 #Installing Vivaldi via Flathub
-flatpak install flathub com.vivaldi.Vivaldi
+flatpak install flathub com.vivaldi.Vivaldi -y
 
 #Game Stuff
 
 #Installing Steam via Flathub
-flatpak install flathub com.valvesoftware.Steam
+flatpak install flathub com.valvesoftware.Steam -y
 
 #Installing Bottles via Flathub
-flatpak install flathub com.usebottles.bottles
+flatpak install flathub com.usebottles.bottles -y
 
 #Installing MiniGalaxy via Flathub
-flatpak install flathub io.github.sharkwouter.Minigalaxy
+flatpak install flathub io.github.sharkwouter.Minigalaxy -y
 
 #Installing Heroic Games Launcher via Flathub
-flatpak install flathub com.heroicgameslauncher.hgl
+flatpak install flathub com.heroicgameslauncher.hgl -y
 
 #Installing Lutris via Flathub
-flatpak install flathub net.lutris.Lutris
+flatpak install flathub net.lutris.Lutris -y
 
 #Books
 
 #Installing Calibre via Flathub
-flatpak install flathub com.calibre_ebook.calibre
+flatpak install flathub com.calibre_ebook.calibre -y
 
 #Photos
 
 #Installing XnConvert via Flathub
 #This is what you use for converting WebP Images for Wallpapers.
-flatpak install flathub com.xnview.XnConvert
+flatpak install flathub com.xnview.XnConvert -y
 
 #Remote Desktop
 
 #Installing Remmina via Flathub
-flatpak install flathub org.remmina.Remmina
+flatpak install flathub org.remmina.Remmina -y
 
 #Other Stuff that needs to be installed.
 
 #Installing Authenticator via Flathub
-flatpak install flathub com.belmoussaoui.Authenticator
+flatpak install flathub com.belmoussaoui.Authenticator -y
 
 #Adding a blank line in text for cleaner output.
 echo -e "\n"
