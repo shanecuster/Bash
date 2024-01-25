@@ -7,7 +7,7 @@
 echo "Hello Shane, Lets get your system updated for you."
 
 #Update Command
-sudo apt update && sudo apt upgrade -y
+sudo apt update && sudo apt dist-upgrade -y
 
 #Update successful message
 echo "Debian has been updated."
