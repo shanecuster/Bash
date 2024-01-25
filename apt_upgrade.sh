@@ -9,6 +9,9 @@ echo "Hello Shane, Lets get your system updated for you."
 #Update Command
 sudo apt update && sudo apt dist-upgrade -y
 
+#Installed Nala to use for updating.
+sudo nala update
+
 #Update successful message
 echo "Debian has been updated."
 
