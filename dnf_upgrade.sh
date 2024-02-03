@@ -4,6 +4,9 @@
 #I am still learning how to do this.
 #I will continue to update as I learn. 
 
+#Recording the start time.
+start_time=$(date +%s)
+
 #Clear the screen
 clear
 
@@ -42,6 +45,18 @@ echo -e "\n"
 
 #Alert at the end of the update.
 echo "Your software is up-to-date."
+
+#Adding a blank line in text for cleaner output.
+echo -e "\n"
+
+#Recording the end time.
+end_time=$(date +%s)
+
+#Calculating the time that elapsed.
+elapsed_time=$((end_time - start_time))
+
+#Displaying the elapsed time.
+echo "Your upgrade took $elapsed_time seconds."
 
 #Adding a blank line in text for cleaner output.
 echo -e "\n"
