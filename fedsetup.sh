@@ -77,6 +77,10 @@ echo "Now installing Software Packages." && \
 #Web Browsers
 #Firefox is installed by default.
 
+#Installing Syncthing.
+Sudo dnf install syncthing -y
+echo "Syncthing has been installed." && \
+
 #Installing Brave Browser via Flathub.
 flatpak install flathub com.brave.Browser -y
 echo "Brave Browser has been installed." && \
