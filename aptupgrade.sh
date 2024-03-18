@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #I have setup my laptop with Debian to try something new.
 #I will make a setup script for that distriibution as well.
 #This is my learning process for the apt package manager.
