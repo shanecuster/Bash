@@ -11,11 +11,23 @@ start_time=$(date +%s)
 #Welcome Message
 echo "Hello Shane, Lets get your system updated for you."
 
-#Update Command
-sudo apt update && sudo apt dist-upgrade -y
+#Updating repositories
+sudo apt update
+
+#Upgrading the system
+sudo apt dist-upgrade -y
+
+#used to remove unnecessary packages.
+sudo apt autoremove
 
 #Installed Nala to use for updating.
 sudo nala update
+
+#Adding a blank line in text for cleaner output.
+echo -e "\n"
+
+#upgrading Flatpaks.
+flatpak upgrade
 
 #Update successful message
 echo "Debian has been updated."
