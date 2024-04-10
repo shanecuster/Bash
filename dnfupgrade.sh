@@ -10,6 +10,12 @@ start_time=$(date +%s)
 #Clear the screen
 clear
 
+#Welcome Message
+echo "Hello Shane, Lets get your system updated for you."
+
+#Adding a blank line in the text for cleaner output.
+echo -e "\n"
+
 #Updates the system using dnf
 sudo dnf upgrade -y
 
