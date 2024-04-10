@@ -8,8 +8,14 @@
 #Recording the start time.
 start_time=$(date +%s)
 
+#Clear the screen
+clear
+
 #Welcome Message
 echo "Hello Shane, Lets get your system updated for you."
+
+#Adding a blank line in text for cleaner output.
+echo -e "\n"
 
 #Updating repositories
 sudo apt update
@@ -21,13 +27,16 @@ sudo apt dist-upgrade -y
 sudo apt autoremove
 
 #Installed Nala to use for updating.
-sudo nala update
+#sudo nala update
 
 #Adding a blank line in text for cleaner output.
 echo -e "\n"
 
 #upgrading Flatpaks.
 flatpak upgrade
+
+#Adding a blank line in text for cleaner output.
+echo -e "\n"
 
 #Update successful message
 echo "Debian has been updated."
@@ -50,6 +59,9 @@ else
     echo "Script completed in $elapsed_time seconds."
 fi
 
+#Adding a blank line in text for cleaner output.
+echo -e "\n"
+
 #exiting the script
 echo "Press Enter to exit"
 
@@ -59,6 +71,6 @@ read
 #Adding a blank line in text for cleaner output.
 echo -e "\n"
 
-clear
+clear && neofetch
 
 exit
