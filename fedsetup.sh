@@ -27,6 +27,9 @@ echo "DNF5 has been installed and your aliases have been created." && \
 #Adding a blank line in text for cleaner output.
 echo -e "\n"
 
+#Installing cowsay for fun
+sudo dnf install cowsay -y
+
 #Alerting the user that the upgrade will start.
 echo "System upgrade will now begin." && \
 
