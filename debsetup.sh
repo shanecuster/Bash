@@ -10,3 +10,5 @@ wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gp
 sudo apt update && sudo apt install nala -y
 
 sudo apt install syncthing -y
+
+sudo apt install cowsay -y
