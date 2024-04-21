@@ -30,6 +30,9 @@ echo -e "\n"
 #Installing cowsay for fun
 sudo dnf install cowsay -y
 
+#Installing tldr to only display the stuff you need from man pages.
+sudo dnf install tldr -y
+
 #Alerting the user that the upgrade will start.
 echo "System upgrade will now begin." && \
 
