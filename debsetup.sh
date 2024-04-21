@@ -12,3 +12,6 @@ sudo apt update && sudo apt install nala -y
 sudo apt install syncthing -y
 
 sudo apt install cowsay -y
+
+#Installing tldr to only display the stuff you need from man pages.
+sudo dnf install tldr -y
