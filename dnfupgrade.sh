@@ -82,7 +82,7 @@ read
 #Clearing the screen after finishing.
 clear
 
-#I have neofetch set to run automatically at terminal startup so this will appear as if I have just opened the terminal after upgrading.
-neofetch
+#I have fastfetch set to run automatically at terminal startup so this will appear as if I have just opened the terminal after upgrading.
+fastfetch
 
 exit
