@@ -15,3 +15,6 @@ sudo apt install cowsay -y
 
 #Installing tldr to only display the stuff you need from man pages.
 sudo dnf install tldr -y
+
+#Installing fastfetch
+sudo dnf install fastfetch -y
