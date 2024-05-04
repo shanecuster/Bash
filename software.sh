@@ -65,14 +65,14 @@ echo "Bitwarden Password Manager has been installed." && \
 #Adding a blank line in text for cleaner output.
 echo -e "\n"
 
-#Installing Neofetch and setting it to run at terminal startup.
-sudo dnf install neofetch -y
-echo "Neofetch has been installed." && \
+#Installing Fastfetch and setting it to run at terminal startup.
+sudo dnf install fastfetch -y
+echo "Fastfetch has been installed." && \
 
 #Adding a blank line in text for cleaner output.
 echo -e "\n"
 
-sudo echo "neofetch" >> /home/.bashrc
+sudo echo "fastfetch" >> /home/.bashrc
 
 #Installing Htop
 sudo dnf install htop -y
