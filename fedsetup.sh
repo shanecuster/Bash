@@ -115,14 +115,14 @@ echo "Bitwarden Password Manager has been installed." && \
 #Adding a blank line in text for cleaner output.
 echo -e "\n"
 
-#Installing Neofetch and setting it to run at terminal startup.
-sudo dnf install neofetch -y
-echo "Neofetch has been installed." && \
+#Installing fastfetch and setting it to run at terminal startup.
+sudo dnf install fastfetch -y
+echo "Fastfetch has been installed." && \
 
 #Adding a blank line in text for cleaner output.
 echo -e "\n"
 
-sudo echo "neofetch" >> /home/.bashrc
+sudo echo "fastfetch" >> /home/.bashrc
 
 #Installing Htop
 sudo dnf install htop -y
@@ -432,8 +432,8 @@ echo "TorGuard" && \
 echo "Minecraft" && \
 echo "VirtualBox" && \
 
-#Creating Alias for "clear" to clear the screen and show neofetch.
-sudo echo "alias clear="clear && neofetch"" >> /home/.bashrc
+#Creating Alias for "clear" to clear the screen and show fastfetch.
+sudo echo "alias clear="clear && fastfetch"" >> /home/.bashrc
 
 #Posting Press Enter to Continue to Let the user know the script has completed.
 echo "Press Enter to continue."
