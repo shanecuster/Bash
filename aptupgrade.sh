@@ -71,6 +71,6 @@ read
 #Adding a blank line in text for cleaner output.
 echo -e "\n"
 
-clear && neofetch
+clear && fastfetch
 
 exit
