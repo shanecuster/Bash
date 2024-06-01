@@ -18,3 +18,6 @@ sudo dnf install tldr -y
 
 #Installing fastfetch
 sudo dnf install fastfetch -y
+
+#Installing some terminal games
+sudp apt install ninvaders nsnake nyancat bombardier
