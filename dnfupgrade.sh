@@ -2,19 +2,13 @@
 
 #This script is in its early version.
 #I am still learning how to do this.
-#I will continue to update as I learn. 
+#I will continue to update as I learn.
 
 #Recording the start time.
 start_time=$(date +%s)
 
 #Clear the screen
 clear
-
-#Welcome Message
-echo "Hello Shane, Lets get your system updated for you."
-
-#Adding a blank line in the text for cleaner output.
-echo -e "\n"
 
 #Updates the system using dnf
 sudo dnf upgrade -y
@@ -69,6 +63,12 @@ if ((elapsed_time >= 60)); then
 else
     echo "Script completed in $elapsed_time seconds."
 fi
+
+#Adding a blank line in text for cleaner output.
+echo -e "\n"
+
+#Friendly goodbye message from your friendly neighborhood cow.
+cowsay "Have a great day!"
 
 #Adding a blank line in text for cleaner output.
 echo -e "\n"
