@@ -1,9 +1,8 @@
 #!/bin/bash
 
-#I have setup my laptop with Debian to try something new.
-#I will make a setup script for that distriibution as well.
-#This is my learning process for the apt package manager.
-#I am far more familiar with Fedora than Debian so this is necessary.
+#This script is in its early version.
+#I am still learning how to do this.
+#I will continue to update as I learn.
 
 #Recording the start time.
 start_time=$(date +%s)
@@ -11,35 +10,44 @@ start_time=$(date +%s)
 #Clear the screen
 clear
 
-#Welcome Message
-echo "Hello Shane, Lets get your system updated for you."
-
-#Adding a blank line in text for cleaner output.
-echo -e "\n"
-
-#Updating repositories
+#Updates the Repositories
 sudo apt update
 
-#Upgrading the system
-sudo apt dist-upgrade -y
+#Updating the System
+sudo apt upgrade -y
 
-#used to remove unnecessary packages.
-sudo apt autoremove
+#Waiting three seconds
+sleep 3
 
-#Installed Nala to use for updating.
-#sudo nala update
+#Updates Flatpaks
+flatpak upgrade -y
 
-#Adding a blank line in text for cleaner output.
+#Adding a blank line in the text for cleaner output.
 echo -e "\n"
 
-#upgrading Flatpaks.
-flatpak upgrade
+#Waiting three seconds
+sleep 3
 
-#Adding a blank line in text for cleaner output.
+#Alerting me when Upgrading is done.
+echo "Updated on: "  && \
+
+#Adding a blank line in the text for cleaner output.
 echo -e "\n"
 
-#Update successful message
-echo "Debian has been updated."
+#Showing the date/time when the update is complete
+date && \
+
+#Adding a blank line in the text for cleaner output.
+echo -e "\n"
+
+#Showing the date on a calendar.
+cal && \
+
+#Adding a blank line in the text for cleaner output.
+echo -e "\n"
+
+#Alert at the end of the update.
+echo "Your software is up-to-date."
 
 #Adding a blank line in text for cleaner output.
 echo -e "\n"
@@ -62,15 +70,22 @@ fi
 #Adding a blank line in text for cleaner output.
 echo -e "\n"
 
+#Friendly goodbye message from your friendly neighborhood cow.
+cowsay "Have a great day!"
+
+#Adding a blank line in text for cleaner output.
+echo -e "\n"
+
 #exiting the script
 echo "Press Enter to exit"
 
 #Reading user input
 read
 
-#Adding a blank line in text for cleaner output.
-echo -e "\n"
+#Clearing the screen after finishing.
+clear
 
-clear && fastfetch
+#I have fastfetch set to run automatically at terminal startup so this will appear as if I have just opened the terminal after upgrading.
+fastfetch
 
 exit
