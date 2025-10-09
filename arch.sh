@@ -10,7 +10,7 @@ start_time=$(date +%s)
 clear
 
 #Updates
-sudo pacman -Syyu
+sudo pacman -Syyu --no-confirm
 
 #Waiting two seconds
 sleep 2
@@ -83,5 +83,3 @@ clear
 
 #I have fastfetch set to run automatically at terminal startup so this will appear as if I have just opened the terminal after upgrading.
 fastfetch
-
-exit#
