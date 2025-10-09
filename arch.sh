@@ -10,7 +10,7 @@ start_time=$(date +%s)
 clear
 
 #Updates
-sudo pacman -Syyu --no-confirm
+sudo pacman -Syyu --noconfirm
 
 #Waiting two seconds
 sleep 2
